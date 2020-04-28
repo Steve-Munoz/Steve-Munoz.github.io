@@ -1,4 +1,27 @@
-small {
-  display: flex;
-  justify-content: center;
+body {
+  background: #ccc;
+}
+/* :hover is used to select elements when you mouse over them, "a" is refering to anchor tag for the ID header */
+#header a:hover {
+  color: #fff;
+}
+#bg-img {
+  /* setting background to an image */
+  background: url("images/background.jpg");
+  background-size: 100%;
+  /* below the background image will not be repeated and image will show only once */
+  background-repeat: no-repeat;
+  min-height: 500px;
+}
+/*i put a negative number so it overlapped with showcase image(bg-img) */
+#about {
+  margin-top: -200px;
+}
+
+#portfolio span {
+  padding: 10px 20px 10px 20px;
+}
+#portfolio hr {
+  border-width: 2px;
+  margin-top: 10px;
 }
