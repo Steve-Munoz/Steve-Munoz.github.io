@@ -14,9 +14,11 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
+    <!-- reference my own css files -->
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <!-- BODY -->
+  <body data-spy="scroll" data-target=".navbar">
     <div id="header">
       <!-- NAVBAR -->
       <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
@@ -68,11 +70,11 @@
                     <img
                       src="images/alaska.jpeg"
                       width="250"
-                      class="img-fluid rounded-top mx -5 d-non d-lg-block"
+                      class="img-fluid rounded-top mx-5 d-non d-lg-block"
                     />
                     <div class="media-body">
-                      <h3 class="display-4 ml-5">A Little About Myself</h3>
-                      <p class="text-muted ml-5">
+                      <h3 class="display-5 ml-5">A Little About Myself</h3>
+                      <p class="lead text-justify mr-5">
                         My name is Steve Munoz, and I'm a part time full stack
                         developer student at UT Austin Coding Bootcamp. I'm
                         currently working full time as Utilities Specialist for
@@ -87,8 +89,8 @@
                         minimum of three times a week. I also enjoy traveling,
                         meeting new people, and attending salsa/bachata socials.
                       </p>
-                      <h3 class="display-4 ml-5">Resume and Experience</h3>
-                      <p class="text-muted ml-5">
+                      <h3 class="display-5 ml-5">Resume and Experience</h3>
+                      <p class="lead text-justify mr-5">
                         Dedicated and passionate about full stack development, I
                         have strived to engulf myself in learning and practicing
                         alll there is to know about being a full stack
@@ -103,11 +105,94 @@
                   </div>
                 </div>
               </div>
-              <div class="card-footer bg-success"></div>
+              <!-- FOOTER -->
+              <div class="card-footer bg-danger">
+                <!-- <a href="#"><i class="fa fa-github fa-2x mx-3"></i></a> -->
+                <!-- <a href="#"><i class="fa fa-linkedin fa-2x mx-3"></i></a> -->
+              </div>
             </div>
+            <!-- END FOOTER -->
           </div>
         </div>
       </div>
+      <!-- END ABOUT ME SECTION -->
     </div>
+    <!-- Portfolio section -->
+    <div id="portfolio">
+      <div class="container">
+        <span class="bg-success text-white"> Portfolio</span>
+        <hr class="bg-success" />
+        <div class="row">
+          <!-- STARTING CARD COLUMNS -->
+          <div class="col-lg-6 mt-5">
+            <div class="card bg-white">
+              <img
+                src="images/fullstack.jpg"
+                width="200"
+                height="80"
+                class="img-fluid m-auto py-3"
+              />
+              <h3 class="text-center bg-danger">Career</h3>
+              <p class="lead text-justify p-3">Full Stack Developer Student</p>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-5">
+            <div class="card bg-white">
+              <img
+                src="images/fullstack.jpg"
+                width="200"
+                height="80"
+                class="img-fluid m-auto py-3"
+              />
+              <h3 class="text-center bg-danger">Career</h3>
+              <p class="lead text-justify p-3">Full Stack Developer Student</p>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-5">
+            <div class="card bg-white">
+              <img
+                src="images/fullstack.jpg"
+                width="200"
+                height="80"
+                class="img-fluid m-auto py-3"
+              />
+              <h3 class="text-center bg-danger">Career</h3>
+              <p class="lead text-justify p-3">Full Stack Developer Student</p>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-5">
+            <div class="card bg-white">
+              <img
+                src="images/fullstack.jpg"
+                width="200"
+                height="80"
+                class="img-fluid m-auto py-3"
+              />
+              <h3 class="text-center bg-danger">Career</h3>
+              <p class="lead text-justify p-3">Full Stack Developer Student</p>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-5">
+            <div class="card bg-white">
+              <img
+                src="images/fullstack.jpg"
+                width="200"
+                height="80"
+                class="img-fluid m-auto py-3"
+              />
+              <h3 class="text-center bg-danger">Career</h3>
+              <p class="lead text-justify p-3">Full Stack Developer Student</p>
+            </div>
+          </div>
+
+          <!-- ENDING CARD COLUMNS -->
+        </div>
+      </div>
+    </div>
+    <!-- END BODY -->
   </body>
 </html>
