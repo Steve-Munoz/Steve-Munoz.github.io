@@ -16,72 +16,71 @@
     />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body style="height: 100%;" ;>
     <!-- navigation bar -->
-    <nav class="navbar navbar-light bg-light navbar-expand-lg fixed-top">
-      <a href="#" class="navbar-brand">Steve Munoz</a>
-      <!-- Need button to toggle/trigger the collapse or else items will not show  -->
-      <!-- data-toggle ="collapse" is needed for bootstrap to work -->
-      <!-- data-target ="(place ID here)" is needed along with data-toggle which is used to target your ID and this will display your dropdown -->
-      <!--REMINDER: for the toggler to work you need add the JS code from Bootsrap at the bottom of your BODY -->
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarCollapse"
-      >
-        <!-- below gives it the burger icon so that you click it to know to expand -->
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <!-- create your data-target ID in the div below -->
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <!-- below: ml-auto shifts the items below to the right side of yournavbar -->
-        <ul class="navbar-nav ml-auto">
-          <li class="navbar-item">
-            <a href="index.html" class="nav-link"> About</a>
-          </li>
-          <li class="navbar-item">
-            <a href="portfolio.html" class="nav-link"> Portfolio</a>
-          </li>
-          <li class="navbar-item">
-            <a href="contact.html" class="nav-link"> Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <!-- Container -->
-    <!-- In order to see "Contact" i had to increase margin-top to "80px" -->
-    <form
-      class="container mt-5"
-      style="margin-top: 80px;"
-      ;
-      style="height: 100%;"
-      ;
-    >
-      <span class="bg-dark text-white">Contact me</span>
-      <div class="row">
-        <div class="col">
-          <div class="card bg-white">
-            <div class="card-reader">
-              <h4>Contact</h4>
-              <div class="form-group">
-                <input type="text" placeholder="Name" class="form-control" />
-              </div>
+    <div id="header">
+      <!-- NAVBAR -->
+      <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+        <div class="container">
+          <!-- Need button to toggle/trigger the collapse or else items will not show  -->
+          <!-- data-toggle ="collapse" is needed for bootstrap to work -->
+          <!-- data-target ="(place ID here)" is needed along with data-toggle which is used to target your ID and this will display your dropdown -->
+          <!--REMINDER: for the toggler to work you need add the JS code from Bootsrap at the bottom of your BODY -->
+          <button
+            class="navbar-toggler"
+            data-toggle="collapse"
+            data-target="#Navbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a href="#" class="navbar-brand">
+            <h3>Steve Munoz</h3>
+          </a>
+          <div class="collapse navbar-collapse" id="Navbar">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a href="index.html" class="nav-link"> About Me</a>
+              </li>
+              <li class="nav-item">
+                <a href="portfolio.html" class="nav-link"> Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a href="contact.html" class="nav-link"> Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- ENDING NAVBAR BELOW -->
+      </nav>
+    </div>
+    <!-- CONTACT -->
 
-              <div class="form-group">
-                <input type="text" placeholder="Email" class="form-control" />
-              </div>
+    <form>
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col">
+            <div class="card bg-white">
+              <div class="card-header">
+                <h4 class="my-4">Contact</h4>
+                <div class="form-group">
+                  <input type="text" placeholder="Name" class="form-control" />
+                </div>
 
-              <div class="form-group">
-                <textarea
-                  class="form-control"
-                  placeholder="Message"
-                  class="form-control"
-                ></textarea>
-              </div>
+                <div class="form-group">
+                  <input type="text" placeholder="Email" class="form-control" />
+                </div>
 
-              <div class="form-group">
-                <button class="btn btn-success text-white">Submit</button>
+                <div class="form-group">
+                  <textarea
+                    class="form-control"
+                    placeholder="Message"
+                    class="form-control"
+                  ></textarea>
+                </div>
+
+                <div class="form-group">
+                  <button class="btn btn-success text-white">Submit</button>
+                </div>
               </div>
             </div>
           </div>
@@ -89,31 +88,19 @@
       </div>
     </form>
     <!-- FOOTER -->
-    <div class="container-fluid bg-dark">
-      <div class="row">
-        <div class="col">
-          <p class="text-white py-3">
-            Copyright &copy;Steve-Munoz.github.io 2020
-          </p>
+    <footer>
+      <div class="container-fluid bg-dark">
+        <div class="row">
+          <div class="col">
+            <p class="text-white pt-3 text-center">
+              Copyright &copy;Steve-Munoz.github.io 2020
+            </p>
+          </div>
         </div>
       </div>
-    </div>
+    </footer>
 
-    <!-- Why do I need javascript at the bottom here? -->
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-      crossorigin="anonymous"
-    ></script>
+    <!-- end footer -->
+    <!-- END BODY -->
   </body>
 </html>
