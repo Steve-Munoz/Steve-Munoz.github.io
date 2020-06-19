@@ -32,9 +32,13 @@ html {
 body {
   height: 100%;
 }
-.h3ColorText {
-  color: black;
-}
+
 .icons {
+  color: white;
+}
+.skillsText {
+  color: white;
+}
+.portfolioText {
   color: white;
 }
